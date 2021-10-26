@@ -1,3 +1,2 @@
 from CriaPecas import cria_pecas
-import CriaPecas
-cria_pecas()
+from InicioJogo import inicia_jogo

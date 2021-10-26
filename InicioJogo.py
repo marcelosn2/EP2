@@ -9,7 +9,6 @@ def inicia_jogo(num,pecas):
         i +=1
     jogo['jogadores'] = jogadores
 
-
     jogo['monte']=pecas
     jogo['mesa']=[]
 
@@ -17,4 +16,3 @@ def inicia_jogo(num,pecas):
 
     return (jogo)
 
-print(inicia_jogo(4,cria_pecas()))
