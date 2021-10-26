@@ -7,4 +7,3 @@ def cria_pecas():
 	[3,5], [4,4], [4,5], [0,2], [5,5], [5,6], [0,5]]
     random.shuffle(pecas)
     return (pecas)
-print(cria_pecas())
