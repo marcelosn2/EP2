@@ -6,10 +6,9 @@ def verifica_ganhador(jogadores):
     while i <= (len(jogadores.keys())):
         print(len(jogadores.keys()))
         if len(jogadores[i-1])==0:
-            return(i)
+            return(i-1)
         else:
             i+=1 
-    print('saiu')
     return(-1)
 
 

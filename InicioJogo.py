@@ -8,11 +8,6 @@ def inicia_jogo(num,pecas):
         del pecas[:7]
         i +=1
     jogo['jogadores'] = jogadores
-
     jogo['monte']=pecas
     jogo['mesa']=[]
-
-
-
     return (jogo)
-
