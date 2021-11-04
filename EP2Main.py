@@ -8,8 +8,7 @@ import random
 
 
 
-def FuncaoJogo():
-    jogadores=int(input('Quantos jogadores?: '))
+def FuncaoJogo(jogadores):
     pecas=cria_pecas()
     Jogo=inicia_jogo(jogadores,pecas)
     print(Jogo)
@@ -76,12 +75,15 @@ def FuncaoJogo():
             
             print('Ganhador: Jogador numero {0}'.format(numero+1))
 
-x = input ("Quer jogar Domino? sim[Y]/nao[N]: ")
-
+x = input("Quer jogar Domino? sim[Y]/nao[N]: ")
+x = x.upper()
 while x == 'Y':
-    FuncaoJogo()
+    jogadores=int(input('Quantos jogadores?: '))
+    while jogadores > 4 or jogadores<2:
+        print('Escolha invalida. Escolha entre 2 a 4 jogadores.')
+        jogadores=int(input('Quantos jogadores?: '))
+    FuncaoJogo(jogadores)
     x = input ("Quer jogar Domino? sim[Y]/nao[N]: ")
-
-
+    x=x.upper()
 
 print ('Finalizado. Rode o programa para jogar novamente.')
